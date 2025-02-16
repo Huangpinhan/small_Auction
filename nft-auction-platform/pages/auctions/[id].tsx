@@ -17,8 +17,8 @@ const ORACLE_ABI = [
     "function getMaticPrice(string currency) external view returns (int256)"
 ];
 
-const NFT_CONTRACT_ADDRESS = "0xe1B596b51B78888BFdC2fe6221e306a053D3556C"; // NFT 合約地址
-const ORACLE_ADDRESS = "0x4E4A26DBf22319D3Ec3770Fe5936B7B6c430eEA6"; // MaticPriceOracle 合約地址
+const NFT_CONTRACT_ADDRESS = process.env. NFT_CONTRACT_ADDRESS; // NFT 合約地址
+const ORACLE_ADDRESS =process.env.ORACLE_ADDRESS; // MaticPriceOracle 合約地址
 const USD_TWD_API = "https://api.exchangerate-api.com/v4/latest/USD"; // 取得 USD/TWD 匯率的 API
 
 export default function AuctionPage() {
