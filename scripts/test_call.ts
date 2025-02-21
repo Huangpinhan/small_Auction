@@ -6,7 +6,7 @@ const provider = new ethers.JsonRpcProvider(process.env.ALCHEMY_API_URL);
 const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
 
 // Replace with your deployed contract address
-const CONTRACT_ADDRESS = "0x4E4A26DBf22319D3Ec3770Fe5936B7B6c430eEA6";
+const CONTRACT_ADDRESS = "0x你的oracle合約地址";
 
 async function sleep(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
