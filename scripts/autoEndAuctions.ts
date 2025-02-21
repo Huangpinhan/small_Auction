@@ -3,7 +3,7 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-const AUCTION_FACTORY_ADDRESS = "0x15bC377DDBdD42C343506195e4FCF0140Eef3a17"; // 需要填入工廠合約地址
+const AUCTION_FACTORY_ADDRESS = "0x你的工廠合約地址"; // 需要填入工廠合約地址
 const AUCTION_FACTORY_ABI = [
     "function getAllAuctions() external view returns (tuple(address auctionAddress, address owner, address nftContract, uint256 tokenId, uint256 endTime)[])"
 ];
